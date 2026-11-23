@@ -1,0 +1,263 @@
+:root {
+  --primary: #2c4a3e;
+  --primary-light: #446859;
+  --accent: #d4a373;
+  --bg-light: #faf8f5;
+  --card-bg: #ffffff;
+  --text-dark: #2b2d42;
+  --text-muted: #6c757d;
+  --border: #e9ecef;
+  --demo-banner-bg: #fff3cd;
+  --demo-banner-text: #856404;
+  --demo-banner-border: #ffeeba;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.demo-banner {
+  background-color: var(--demo-banner-bg);
+  color: var(--demo-banner-text);
+  border-bottom: 1px solid var(--demo-banner-border);
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.badge-status {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.badge-baseline {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.badge-fixed {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+main.container {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 3rem;
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.product-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f4;
+  border-radius: 8px;
+  padding: 2rem;
+  min-height: 420px;
+}
+
+.product-image-svg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.product-meta-header {
+  margin-bottom: 1.25rem;
+}
+
+.category-breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.price-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.sku-tag {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--bg-light);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.availability-tag {
+  font-size: 0.85rem;
+  color: #155724;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+
+.product-description {
+  color: #4a4e69;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.ingredients-list {
+  font-size: 0.9rem;
+  color: #4a4e69;
+  background: #fafafa;
+  padding: 1rem;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 4px 4px 0;
+  margin: 0.75rem 0;
+}
+
+.benefits-list {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+}
+
+.benefits-list li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.specs-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.specs-table td:first-child {
+  font-weight: 600;
+  width: 35%;
+  color: var(--text-muted);
+}
+
+.cta-button {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.cta-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.loading-skeleton {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px dashed #ced4da;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

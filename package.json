@@ -1,0 +1,35 @@
+{
+  "name": "technical-seo-geo-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Controlled lab demonstration: three deliberately introduced product-page SEO/GEO defects, their fixes, and a scoped automated verification harness (fictional brand).",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node tests/run-all.js",
+    "test:baseline": "node tests/test-baseline.js",
+    "test:fixed": "node tests/test-fixed.js",
+    "test:negative": "node tests/test-negative-fixtures.js",
+    "test:mutations": "node tests/test-mutations.js",
+    "test:regression": "node tests/test-regression-injected-failure.js"
+  },
+  "keywords": [
+    "seo",
+    "technical-seo",
+    "geo",
+    "ai-search-readiness",
+    "schema-org",
+    "json-ld",
+    "structured-data",
+    "canonical",
+    "playwright",
+    "demo"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  }
+}
