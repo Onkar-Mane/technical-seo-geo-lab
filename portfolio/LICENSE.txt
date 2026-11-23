@@ -1,0 +1,17 @@
+Portfolio PDF usage notice
+
+The PDF files in this folder (sample-audit-report.pdf and
+one-page-technical-demonstration.pdf) are Copyright (c) 2026 Onkar Mane.
+All rights reserved.
+
+Permission is granted to view and share these PDFs, unchanged and together
+with this notice, for evaluation purposes. They are not covered by the MIT
+License that applies to the rest of this repository. Do not modify them,
+redistribute them in altered form, or use them as your own work.
+
+The PDFs are illustrative samples about a fictional demonstration site
+(Aura Botanica). They describe laboratory work only; they are not client work
+and make no claims about search rankings, traffic, sales or AI citations.
+
+The script build-portfolio-pdfs.js that generates the PDFs is part of the
+repository's MIT-licensed source code.
