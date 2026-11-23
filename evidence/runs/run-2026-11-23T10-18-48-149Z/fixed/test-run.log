@@ -1,0 +1,59 @@
+--- STEP 1: Fetching Raw HTTP Payload, No-JS DOM, & Browser-Rendered DOM ---
+[EVIDENCE] Saved raw HTML (6498 bytes) to evidence/fixed/raw-html-product.html
+[EVIDENCE] Saved rendered DOM (6561 bytes) to evidence/fixed/rendered-dom-product.html
+[EVIDENCE] Saved 1 JSON-LD block(s) to evidence/fixed/jsonld-extracted.json
+
+--- EVALUATING DEFECT 1: Server-Delivered No-JS Visible Text vs Rendered DOM ---
+Result: PASS (Defect Resolved as Expected)
+Server No-JS Visible Coverage: 100% (6/6 observable facts present)
+Rendered DOM Visible Coverage: 100% (6/6 observable facts present)
+Parity Status: 100% parity achieved between server delivery and browser DOM.
+
+--- EVALUATING DEFECT 2: Product Structured Data (Schema.org JSON-LD) ---
+Result: PASS (Defect Resolved as Expected)
+Schema.org Syntax Valid: true
+Visible Content Consistent: true
+Local Schema Validation Passed: true
+Validation Errors: 0
+  - Schema.org context and Product @type confirmed valid across all blocks.
+  - Commercial offers block present with valid numeric price and ISO 4217 currency.
+  - Product name, description, SKU, and price match visible DOM facts.
+  - Exact description correspondence verified under documented normalization policy.
+  - Complies with non-fabrication rule (no synthetic ratings or unverified reviews).
+Parsed JSON-LD Blocks: [
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Radiant Barrier Defense Serum",
+    "description": "A restorative botanical facial serum formulated with 2% niacinamide, ceramide complex, and multi-molecular hyaluronic acid to hydrate and protect the skin barrier against environmental stressors.",
+    "sku": "AB-RDS-050",
+    "brand": {
+      "@type": "Brand",
+      "name": "Aura Botanica"
+    },
+    "category": "Skincare > Facial Serums",
+    "offers": {
+      "@type": "Offer",
+      "price": "38.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://demo.aurabotanica.example/products/radiant-barrier-serum",
+      "priceValidUntil": "2027-12-31"
+    }
+  }
+]
+
+--- EVALUATING DEFECT 3: Canonical & Indexability Directives ---
+Result: PASS (Defect Resolved as Expected)
+Raw Robots Directives: ["index, follow"]
+Raw Googlebot Directives: []
+Raw Canonical URLs: ["https://demo.aurabotanica.example/products/radiant-barrier-serum"]
+Expected Simulated Production Canonical: "https://demo.aurabotanica.example/products/radiant-barrier-serum"
+Directives Errors: 0
+  - Meta robots directive permits indexing (index, follow).
+  - Authoritative HTTPS simulated production canonical tag verified.
+  - Zero client-rendered DOM mutations detected.
+
+===============================================================
+FIXED SUITE SUMMARY: PASS (All 3 defects verified resolved)
+===============================================================

@@ -1,0 +1,47 @@
+--- STEP 1: Fetching Raw HTTP Payload, No-JS DOM, & Browser-Rendered DOM ---
+[EVIDENCE] Saved raw HTML (3696 bytes) to evidence/baseline/raw-html-product.html
+[EVIDENCE] Saved rendered DOM (5859 bytes) to evidence/baseline/rendered-dom-product.html
+[EVIDENCE] Saved 1 JSON-LD block(s) to evidence/baseline/jsonld-extracted.json
+
+--- EVALUATING DEFECT 1: Server-Delivered No-JS Visible Text vs Rendered DOM ---
+Result: FAIL (Defect Detected as Expected)
+Server No-JS Visible Coverage: 0% (0/6 observable facts present)
+Rendered DOM Visible Coverage: 100% (6/6 observable facts present)
+Facts Missing from Server No-JS Visible Text: ["Product Title","Visible Price","Product SKU","Primary Active (Niacinamide)","Secondary Active (Ceramide NP)","INCI Formulation Base"]
+Observed Baseline Behavior: Product description, pricing, SKU, and INCI formulation are omitted from server HTML.
+
+--- EVALUATING DEFECT 2: Product Structured Data (Schema.org JSON-LD) ---
+Result: FAIL (Defect Detected as Expected)
+Schema.org Syntax Valid: false
+Visible Content Consistent: false
+Local Schema Validation Passed: false
+Validation Errors (4):
+  - [ERROR] Product node #1 (Block #1) is missing a valid 'sku' property.
+  - [ERROR] Product node #1 (Block #1) is missing mandatory commercial property 'offers'.
+  - [ERROR] Discrepancy: Product node #1 (Block #1) name ("Generic Serum") does not match visible title ("Radiant Barrier Defense Serum").
+  - [ERROR] Invalid description: Product node #1 (Block #1) description is incomplete or too short (10 characters: "Skin serum").
+Validation Warnings (0):
+Parsed JSON-LD Blocks: [
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Generic Serum",
+    "description": "Skin serum"
+  }
+]
+
+--- EVALUATING DEFECT 3: Canonical & Indexability Directives ---
+Result: FAIL (Defect Detected as Expected)
+Raw Robots Directives: ["noindex, nofollow"]
+Raw Googlebot Directives: []
+Raw Canonical URLs: ["http://staging-preprod.aurabotanica.internal/products/radiant-barrier-serum"]
+Expected Simulated Production Canonical: "https://demo.aurabotanica.example/products/radiant-barrier-serum"
+Directives Errors (3):
+  - [ERROR] Raw HTML meta[name="robots"] contains indexing blocker: "noindex, nofollow".
+  - [ERROR] Canonical URL uses insecure HTTP protocol ("http://staging-preprod.aurabotanica.internal/products/radiant-barrier-serum").
+  - [ERROR] Canonical URL mismatch: expected simulated production URL "https://demo.aurabotanica.example/products/radiant-barrier-serum", found "http://staging-preprod.aurabotanica.internal/products/radiant-barrier-serum".
+Observed Baseline Behavior: Unintended noindex directive active and canonical targets non-production staging host.
+
+===============================================================
+BASELINE SUITE SUMMARY: PASS (All 3 defects detected)
+===============================================================

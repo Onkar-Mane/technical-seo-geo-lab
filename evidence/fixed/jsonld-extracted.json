@@ -1,0 +1,20 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Radiant Barrier Defense Serum",
+    "description": "A restorative botanical facial serum formulated with 2% niacinamide, ceramide complex, and multi-molecular hyaluronic acid to hydrate and protect the skin barrier against environmental stressors.",
+    "sku": "AB-RDS-050",
+    "brand": {
+      "@type": "Brand",
+      "name": "Aura Botanica"
+    },
+    "category": "Skincare > Facial Serums",
+    "offers": {
+      "@type": "Offer",
+      "price": "38.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://demo.aurabotanica.example/products/radiant-barrier-serum",
+      "priceValidUntil": "2027-12-31"
+    }
+  }

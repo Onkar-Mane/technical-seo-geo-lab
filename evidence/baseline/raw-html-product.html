@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Botanica | Radiant Barrier Defense Serum (Demonstration)</title>
+
+  <!-- DEFECT 3 (BASELINE): Accidental noindex and malformed staging canonical -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="http://staging-preprod.aurabotanica.internal/products/radiant-barrier-serum">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- DEFECT 2 (BASELINE): Incomplete, invalid Schema.org markup missing offers and mismatched name -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Generic Serum",
+    "description": "Skin serum"
+  }
+  </script>
+</head>
+<body>
+  <div class="demo-banner">
+    ⚠️ DEMONSTRATION ONLY — NOT FOR SALE — TECHNICAL SEO PROOF OF CONCEPT (BASELINE STATE)
+  </div>
+
+  <header>
+    <div>
+      <a href="../index.html" class="brand-logo">AURA BOTANICA</a>
+      <span class="brand-tagline">Botanical Dermatology & Barrier Science</span>
+    </div>
+    <nav>
+      <span class="badge-status badge-baseline">Baseline Environment</span>
+      <a href="../index.html">Product Catalog</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="product-grid">
+      <!-- Product Bottle Visualization (Self-contained SVG) -->
+      <div class="product-image-container">
+        <svg class="product-image-svg" viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg">
+          <!-- Dropper Cap -->
+          <rect x="85" y="10" width="30" height="25" rx="4" fill="#2c4a3e" />
+          <rect x="75" y="35" width="50" height="15" rx="3" fill="#446859" />
+          <rect x="90" y="50" width="20" height="15" fill="#d4a373" />
+          <!-- Bottle Body -->
+          <rect x="50" y="65" width="100" height="230" rx="16" fill="#fdfcf9" stroke="#d4a373" stroke-width="2" />
+          <!-- Bottle Label -->
+          <rect x="60" y="115" width="80" height="130" rx="4" fill="#2c4a3e" />
+          <text x="100" y="145" font-family="sans-serif" font-size="7" fill="#d4a373" text-anchor="middle" font-weight="bold">AURA BOTANICA</text>
+          <text x="100" y="165" font-family="sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">RADIANT BARRIER</text>
+          <text x="100" y="177" font-family="sans-serif" font-size="6" fill="#d4a373" text-anchor="middle">DEFENSE SERUM</text>
+          <text x="100" y="200" font-family="sans-serif" font-size="5" fill="#fafafa" text-anchor="middle">2% NIACINAMIDE + CERAMIDES</text>
+          <text x="100" y="225" font-family="sans-serif" font-size="5" fill="#d4a373" text-anchor="middle">50 ML / DEMO ONLY</text>
+        </svg>
+      </div>
+
+      <!-- DEFECT 1 (BASELINE): Critical product content is missing in raw HTML -->
+      <!-- Only loaded dynamically by client-side JavaScript -->
+      <div id="client-product-container">
+        <div class="loading-skeleton">
+          <p><strong>Loading formulation details and product specifications...</strong></p>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+            <em>(Raw HTML crawler notice: Server response payload contains no product title, ingredients, clinical specifications, or pricing.)</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Aura Botanica Demonstration Laboratory &bull; Controlled Technical SEO Case Study &bull; Not an active commercial business.</p>
+  </footer>
+
+  <!-- Client-side script that populates product details in rendered DOM -->
+  <script src="../js/product-loader.js"></script>
+</body>
+</html>

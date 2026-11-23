@@ -1,0 +1,67 @@
+{
+  "runId": "run-2026-11-23T10-18-48-149Z",
+  "timestamp": "2026-11-23T10:18:48.149Z",
+  "gitCommitSha": "5a5211642b11fa80043e87fb1a52ddb9f1a3ba36",
+  "dirtyWorkingTree": false,
+  "dirtyPaths": [],
+  "toolVersions": {
+    "node": "24.12.0",
+    "playwright": "1.65.1",
+    "v8": "13.6.233.17-node.37",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "stages": {
+    "baseline": "COMPLETED",
+    "fixed": "COMPLETED",
+    "negativeFixtures": "COMPLETED",
+    "pageMutations": "COMPLETED",
+    "regressionSuite": "COMPLETED"
+  },
+  "fatalError": null,
+  "testCounts": {
+    "baseline": {
+      "executed": true,
+      "defectsDetected": 3,
+      "total": 3,
+      "defect1Detected": true,
+      "defect2Detected": true,
+      "defect3Detected": true
+    },
+    "fixed": {
+      "executed": true,
+      "defectsResolved": 3,
+      "total": 3,
+      "defect1Resolved": true,
+      "defect2Resolved": true,
+      "defect3Resolved": true
+    },
+    "negativeFixtures": {
+      "executed": true,
+      "passed": 41,
+      "failed": 0,
+      "total": 41
+    },
+    "pageMutations": {
+      "executed": true,
+      "passed": 25,
+      "failed": 0,
+      "total": 25
+    },
+    "regressionSuite": {
+      "executed": true,
+      "passed": true
+    }
+  },
+  "evidenceHashes": {
+    "baseline/raw-html-product.html": "f90bcff5f5434d39be0d957126aaa0492bbd259bd4e46eb058b20e5592e52a06",
+    "baseline/rendered-dom-product.html": "fbef5c05d9bd215fceb159ee41a32da8c287b8584270de3dbd98e3169cd29094",
+    "baseline/jsonld-extracted.json": "a9feaf695952fd4e8684f1a69afb283274a06fba21445951c518399e07bad02c",
+    "fixed/raw-html-product.html": "028ad0a702b24d63e0d7535784384f6c3b3b6bdf6d4503875462d7cf17b224d7",
+    "fixed/rendered-dom-product.html": "85b7955a21c3064468d37675ea87f01d5dc23f1c9caf3e4fcbb4ea56f4e506e7",
+    "fixed/jsonld-extracted.json": "f04ae1ac2e510628b1fcdb7e846cd6f041d2f88a6eab52a3e0ac0ae77791940b",
+    "comparison-diff.md": "7aa376bfa5d40a2292633eb2dec8dd7388c813ab21e7b75cc83c915ec9cd8885"
+  },
+  "overallOutcome": "PASS",
+  "failures": []
+}
